@@ -1,0 +1,10 @@
+---
+- name: To experiement with various playbook troubleshooting screnarios
+  hosts:
+    - all
+    - localhost
+  tasks: 
+    - name: Debug task that will run at all verbosity level
+      debug:
+        msg: "This debug task has verbosity threshold of 2"
+        verbosity: 2

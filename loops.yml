@@ -1,0 +1,11 @@
+---
+- name: play tha  has outer and inner loops
+  hosts: localhost
+
+  tasks: 
+   - include_tasks: tasks/loop_task.yml
+
+     loop:
+      - sunsan
+      - joe
+      - james  
